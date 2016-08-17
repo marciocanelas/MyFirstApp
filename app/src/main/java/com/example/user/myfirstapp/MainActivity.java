@@ -20,6 +20,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button someButton = (Button) findViewById(R.id.all_topics_button)
+
+        someButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                TopicListActivity.start(MainActivity.this);
+            }
+        }
     }
 
     /** Called when the user clicks the Send button */
@@ -30,14 +38,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
-    public findViewById(R.id.all_topics_button).setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            TopicListActivity.start(MainActivity.this);
-        }
-    }
-
-}
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -59,14 +59,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public class EXTRA_MESSAGE {
-    }
-
-public class EXTRA_MESSAGE {
-    }
-
-public class EXTRA_MESSAGE {
     }
 }
