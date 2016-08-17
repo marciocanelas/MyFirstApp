@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button someButton = (Button) findViewById(R.id.all_topics_button)
+        Button someButton = (Button) findViewById(R.id.all_topics_button);
 
         someButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 TopicListActivity.start(MainActivity.this);
             }
-        }
-    }
+
+    ;
 
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {
@@ -60,4 +61,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-}
+;

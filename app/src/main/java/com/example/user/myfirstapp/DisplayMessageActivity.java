@@ -23,3 +23,4 @@ public class DisplayMessageActivity extends AppCompatActivity {
         layout.addView(textView);
 
     }
+}
