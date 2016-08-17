@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 TopicListActivity.start(MainActivity.this);
             }
-
-    ;
+        }
+    }
 
     /** Called when the user clicks the Send button */
     public void sendMessage(View view) {
@@ -61,4 +61,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-;
+}
